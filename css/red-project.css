@@ -1,0 +1,82 @@
+.red-project-info {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.red-project-background {
+  background-image: url(../images/offset-printing.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.red-project-sub-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 400px;
+  width: 100%;
+font-family: sans-serif;
+}
+
+.red-project-sub-background h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.red-project-sub-background hr {
+  border: none;
+  height: 4px;
+  background-color: white;
+  width: 90px;
+  margin-top: 15px;
+}
+/* --------__--_-__-___-__-__-__-___-__-__--__-__-__--__- */
+
+.red-project-description {
+  height: 800px;
+  display: flex;
+font-family: sans-serif;
+}
+
+.red-project-description-pic img {
+  margin-top: 100px;
+  margin-left: 110px;
+  width: 500px;
+  height: 500px;
+}
+.red-project-description-text {
+  margin-top: 100px;
+  margin-left: 110px;
+  margin-right: 100px;
+}
+
+.red-project-description-text p {
+  font-family: sans-serif;
+  padding-top: 20px;
+  line-height: 20px;
+}
+
+.red-project-description-text-project-type h1 {
+  padding-top: 50px;
+}
+
+.red-project-description-text-project-type ul {
+  padding-top: 20px;
+  list-style-type: none;
+}
+.red-project-description-text-project-type ul li {
+  padding-top: 5px;
+}
+.red-project-description-text-project-type a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.red-project-description-text-project-type a:hover {
+  color: rgb(44, 44, 184);
+  font-weight: bolder;
+  font-size: 16px;
+}
