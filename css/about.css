@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* background of about page */
+.about-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/offset-printing.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-background h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.about-background hr {
+  border: none;
+  height: 4px;
+  background-color: white;
+  width: 90px;
+  margin-top: 15px;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* about page background for mobile version */
+@media (max-width: 400px) {
+  .about-background,
+  .about-sub-background {
+    height: 300px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* about heading infoooo */
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  height: 300px;
+  width: 750px;
+}
+
+.about-heading h1 {
+  align-self: center;
+}
+
+.about-hr {
+  align-self: center;
+  border: none;
+  height: 3px;
+  background-color: cyan;
+  margin-top: 10px;
+  width: 70px;
+  margin-top: 20px;
+}
+/* about heading pharaghraph */
+.about-heading p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(107, 115, 116);
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* about heading infoooo for mobile version */
+@media (max-width: 400px) {
+  .about-heading {
+    width: 80%;
+  }
+
+  .about-hr {
+    height: 2px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+
+/* about  gallary   */
+.about-gallary {
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+  flex-basis: 100%;
+}
+.about-gallary-pic-1 {
+  margin-left: 30px;
+  flex-basis: 28%;
+}
+.about-gallary-pic-1 img,
+.about-gallary-pic-2 img,
+.about-gallary-pic-3 img {
+  width: 100%;
+  height: 100%;
+}
+.about-gallary-pic-2,
+.about-gallary-pic-3 {
+  margin-left: -20px;
+  flex-basis: 28%;
+}
+/* information  about us just phraghraph*/
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+
+  line-height: 25px;
+}
+.about-info-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  width: 60%;
+  flex-basis: 300px;
+}
+.about-info-description h1 {
+  font-size: 19px;
+}
+.about-info-description p {
+  font-size: 18px;
+  color: rgb(121, 119, 119);
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* about  gallary  for mobile version */
+@media (max-width: 400px) {
+  .about-gallary {
+    flex-direction: column;
+  }
+
+  .about-gallary-pic-1,
+  .about-gallary-pic-2,
+  .about-gallary-pic-3 {
+    margin: 20px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* information  about us just phraghraph*/
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+
+  line-height: 25px;
+}
+.about-info-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  width: 60%;
+  flex-basis: 300px;
+}
+.about-info-description h1 {
+  font-size: 19px;
+}
+.about-info-description p {
+  font-size: 18px;
+  color: rgb(121, 119, 119);
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* information  about us just phraghraph for mobile version*/
+@media (max-width: 400px) {
+  .about-info {
+    height: 650px;
+  }
+  .about-info-description {
+    margin-top: 50px;
+    width: 85%;
+  }
+
+  .about-info-description p {
+    margin-top: 20px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* our team style  */
+
+.about-our-team {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 900px;
+  background-color: rgb(244, 244, 252);
+}
+
+.about-our-team-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  height: 30%;
+  width: 750px;
+}
+
+.about-our-team-heading h1 {
+  align-self: center;
+}
+
+.about-our-team-hr {
+  align-self: center;
+  border: none;
+  height: 3px;
+  background-color: cyan;
+  margin-top: 10px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.about-our-team-heading p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(107, 115, 116);
+}
+
+/* our team members */
+
+.about-our-team-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 66%;
+}
+
+.about-our-team-members-1,
+.about-our-team-members-2 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.member-pic {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+}
+
+.member-pic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.about-our-team-members h1 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.about-our-team-members p {
+  text-align: center;
+  margin-top: 10px;
+}
+/* click to see more infoooo */
+.about-our-team-members a {
+  text-decoration: none;
+  color: black;
+}
+.about-our-team-members a:hover {
+  color: rgb(31, 97, 160);
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* our team style for mobile version  */
+@media (max-width: 400px) {
+  .about-our-team {
+    height: 1800px;
+  }
+
+  .about-our-team-heading {
+    width: 90%;
+  }
+
+  .about-our-team-heading h1 {
+    margin-top: 50px;
+  }
+
+  .about-our-team-members-1 p,
+  .about-our-team-members-2 p {
+    margin-left: -30px;
+  }
+
+  /* our team members */
+  .about-our-team-members {
+    align-items: center;
+    height: 1600px;
+  }
+
+  .about-our-team-members-1,
+  .about-our-team-members-2 {
+    flex-direction: column;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+
+/* number of our about members */
+.about-numbers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+  background-color: rgb(76, 212, 228);
+  color: white;
+}
+.about-numbers h1 {
+  font-weight: bolder;
+  font-size: 60px;
+}
+.about-numbers p {
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+.about-numbers a {
+  text-decoration: none;
+  color: white;
+}
+.about-numbers a:hover {
+  color: rgb(79, 107, 129);
+}
+/* number of our about members for mobile version */
+@media (max-width: 400px) {
+  .about-numbers {
+    flex-direction: column;
+    height: 700px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+
+/* style for our users toughts */
+.about-our-users-toughts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  height: 600px;
+  width: 750px;
+}
+
+.aabout-our-users-toughts h1 {
+  align-self: center;
+}
+
+.about-our-users-toughts-hr {
+  align-self: center;
+  border: none;
+  height: 3px;
+  background-color: cyan;
+  margin-top: 10px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.about-our-users-toughts p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(107, 115, 116);
+}
+.fucking-shit {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 300px;
+}
+.fucking-shit h1 {
+  font-size: 50px;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* style for our users toughts for mobile version*/
+@media (max-width: 400px) {
+  .about-our-users-toughts {
+    width: 100%;
+  }
+
+  .about-our-team-heading h1 {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  /* .fucking-shit {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 300px;
+  } */
+  .fucking-shit h1 {
+    font-size: 30px;
+  }
+}

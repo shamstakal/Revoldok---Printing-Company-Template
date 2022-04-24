@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+
+.services-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/offset-printing.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-background h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.services-background hr {
+  border: none;
+  height: 4px;
+  background-color: white;
+  width: 90px;
+  margin-top: 15px;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* services page background for mobile version */
+@media (max-width: 400px) {
+  .services-background {
+    height: 300px;
+  }
+
+  .services-background h1 {
+    font-size: 30px;
+  }
+
+  .services-background hr {
+    width: 80px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  height: 300px;
+  width: 750px;
+}
+
+.services-heading h1 {
+  align-self: center;
+}
+
+.services-hr {
+  align-self: center;
+  border: none;
+  height: 3px;
+  background-color: cyan;
+  margin-top: 10px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.services-heading p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(107, 115, 116);
+}
+
+.sevrices-description {
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* services heading infoooo for mobile version */
+@media (max-width: 400px) {
+  .services-heading {
+    width: 90%;
+  }
+
+  .services-hr {
+    height: 2px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* services fries box styling */
+.services-description-fries-box {
+  flex-basis: 30%;
+  margin-left: 30px;
+}
+
+.services-description-fries-box img,
+.services-description-yellow-book img,
+.services-description-sun-shine img {
+  height: 300px;
+  width: 400px;
+}
+
+.services-description-yellow-book,
+.services-description-sun-shine {
+  flex-basis: 30%;
+}
+
+.sevrices-description h1 {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.sevrices-description p {
+  margin-top: 20px;
+  text-align: center;
+  color: darkgray;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* services fries box styling  for mobile*/
+@media (max-width: 400px) {
+  .sevrices-description {
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+  }
+  .services-description-fries-box {
+    margin-left: 0px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* subscription form */
+
+.services-subscription {
+  display: flex;
+  align-items: center;
+  height: 170px;
+  background-color: rgb(244, 212, 92);
+}
+
+.services-subcription-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 27%;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.services-subscription-submit {
+  display: flex;
+  flex-basis: 75%;
+  margin-left: 50px;
+}
+
+.services-subscription-email {
+  flex-basis: 70%;
+}
+
+.services-subscription-email input {
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+  background-color: rgb(246, 223, 145);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  flex-basis: 70%;
+  border: none;
+  height: 50px;
+}
+
+.services-subscription input::placeholder {
+  color: white;
+  font-weight: bolder;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.services-subscription-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: -3px; */
+  height: 50px;
+  flex-basis: 20%;
+}
+
+.services-subscription-button input {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 70px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;
+  background-color: rgb(4, 164, 236);
+  color: white;
+  font-size: 20px;
+}
+
+.services-subscription-button:hover input {
+  background-color: rgb(40, 107, 136);
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* subscription form for mobile version */
+@media (max-width: 400px) {
+  .services-subscription {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .services-subcription-heading {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    flex-basis: 20%;
+  }
+
+  .services-subscription-submit {
+    width: 100%;
+    flex-basis: 5%;
+    margin-left: 20px;
+  }
+
+  .services-subscription-email {
+    flex-basis: 50%;
+  }
+
+  .services-subscription input::placeholder {
+    font-size: 10px;
+  }
+
+  .services-subscription-button {
+    flex-basis: 30%;
+  }
+
+  .services-subscription-button input {
+    font-size: 14px;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* pricing plans */
+
+.pricing-plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(242, 244, 249);
+  height: 700px;
+}
+.pricing-plans-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 42%;
+  height: 200px;
+  margin-top: -20px;
+}
+.pricing-plans-hr {
+  width: 70px;
+  margin-top: 20px;
+  height: 3px;
+  border: none;
+  background-color: rgb(4, 164, 236);
+}
+.pricing-plans-heading p {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 17px;
+  color: rgb(164, 165, 165);
+}
+
+/* example of our plans and booking */
+
+.start-pricing-plans {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}
+
+.start-pricing-add-plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 29%;
+  height: 450px;
+  background-color: white;
+  margin-left: -3px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.start-pricing-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+}
+
+.start-pricing-heading h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1.3px;
+}
+
+.start-pricing-heading h1 {
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 45px;
+  color: rgb(4, 164, 236);
+}
+
+.start-pricing-plans-info {
+  height: 60%;
+  width: 70%;
+  color: rgb(143, 143, 143);
+}
+
+.start-pricing-plans-info p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.start-pricing-plans-info a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.start-pricing-plans-info button {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(4, 164, 236);
+  margin-top: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+/* hover for add cart button */
+#add-cart-1:hover,
+#add-cart-2:hover,
+#add-cart-3:hover {
+  outline: 2px solid blue;
+  background-color: rgb(27, 160, 221);
+}
+#add-plan-1:hover,
+#add-plan-2:hover,
+#add-plan-3:hover {
+ outline: 2px solid rgb(4, 164, 236);
+}
+/* style for add to cart badge */
+.plan-stutes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: rotateZ(50deg);
+  top: 20px;
+  right: -55px;
+  height: 50px;
+  width: 200px;
+  background-color: rgb(230, 68, 68);
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#recommended-plan {
+  width: 210px;
+  top: 35px;
+}
+
+.plan-stutes:hover {
+  background-color: tomato;
+}
+
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* pricing plans for mobile  version */
+@media (max-width: 400px) {
+  .pricing-plans {
+    height: 1750px;
+  }
+
+  .pricing-plans-heading {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .pricing-plans-hr {
+    height: 2px;
+  }
+
+  /* example of our plans and booking */
+  .start-pricing-plans {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .start-pricing-add-plans {
+    flex-direction: column;
+    height: 500px;
+    margin-top: 30px;
+  }
+
+  .start-pricing-heading {
+    height: 30%;
+  }
+
+  .start-pricing-heading h2 {
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  .start-pricing-heading h1 {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  #add-plan-1:hover,
+  #add-plan-2:hover,
+  #add-plan-3:hover {
+    outline: none;
+  }
+  .plan-stutes {
+    display: none;
+  }
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* our cleints style..... */
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+}
+.clients-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  height: 300px;
+  width: 750px;
+}
+
+.clients-heading h1 {
+  align-self: center;
+}
+
+.clients-hr {
+  align-self: center;
+  border: none;
+  height: 3px;
+  background-color: cyan;
+  margin-top: 10px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.clients-heading p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(107, 115, 116);
+}
+
+/* clients gallary......... */
+
+.clients-gallary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 650px;
+  width: 85%;
+}
+
+.clients-gallary-1,
+.clients-gallary-2,
+.clients-gallary-3 {
+  display: flex;
+  justify-content: space-around;
+  height: 210px;
+  width: 100%;
+}
+
+/* style for all clients gallary images */
+
+.clients-gallary img {
+  width: 90%;
+  height: 90%;
+}
+
+.clients-gallary hr {
+  align-self: center;
+  border: none;
+  height: 1px;
+  background-color: rgb(114, 122, 122);
+  width: 350px;
+  margin-top: 20px;
+}
+
+.clients-gallary-1 :hover hr,
+.clients-gallary-2 :hover hr {
+  background-color: blue;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* our cleints style..... for mobile version */
+@media (max-width: 400px) {
+  .clients {
+    height: 1000px;
+  }
+
+  .clients-heading {
+    height: 30%;
+    width: 80%;
+  }
+
+  .clients-heading h1 {
+    align-self: center;
+  }
+}
+/* clients gallary......... */
+
+.clients-gallary {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 650px;
+    width: 85%;
+    background-color: crimson; */
+  display: none;
+}
+/* 
+  .clients-gallary-1,
+  .clients-gallary-2,
+  .clients-gallary-3 {
+    display: flex;
+    justify-content: space-around;
+    height: 210px;
+    width: 100%;
+  } */
+
+/* style for all clients gallary images */
+
+/* .clients-gallary img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .clients-gallary hr {
+    align-self: center;
+    border: none;
+    height: 1px;
+    background-color: rgb(114, 122, 122);
+    width: 350px;
+    margin-top: 20px;
+  }
+
+  .clients-gallary-1 :hover hr,
+  .clients-gallary-2 :hover hr {
+    background-color: blue;
+  } */

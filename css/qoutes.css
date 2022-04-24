@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* background of about page */
+.quotes-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/offset-printing.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .quotes-sub-background {
+
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 400px;
+  width: 100%;
+} */
+
+.quotes-background h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.quotes-background hr {
+  border: none;
+  height: 4px;
+  background-color: white;
+  width: 90px;
+  margin-top: 15px;
+}
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* -_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_--_-_-_-_- -_-_-_-_--_-_-_-_--_-_-__-*/
+/* about page background for mobile version */
+@media (max-width: 400px) {
+  .quotes-background{
+    height: 300px;
+  }
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+}
+
+.quotes-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  height: 300px;
+  width: 750px;
+}
+
+.quotes-heading h1 {
+  align-self: center;
+}
+
+.quotes-hr {
+  align-self: center;
+  border: none;
+  height: 3px;
+  background-color: cyan;
+  margin-top: 10px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.quotes-heading p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(107, 115, 116);
+}
+
+/* qoute registration form */
+
+.quotes-get-a-quotes {
+  display: flex;
+  height: 1200px;
+  background-color: coral;
+}
+.quotes-get-a-quotes-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-basis: 50%;
+  background-color: crimson;
+  height: 800px;
+}
+.quotes-get-a-quotes-form input {
+}
